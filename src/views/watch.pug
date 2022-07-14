@@ -1,0 +1,6 @@
+extends base.pug
+
+block content
+    h2 Welcome to see videos
+    h2 #{video.views === 1 ? `View : ${video.views}` : `Views : ${video.views}`}
+    a(href=`${video.id}/edit`) Edit Video &rarr;
